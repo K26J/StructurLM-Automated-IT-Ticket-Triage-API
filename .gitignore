@@ -1,0 +1,15 @@
+cat << 'EOF' > .gitignore
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+gha-creds-*.json
+structurlm-project-*.json
+.pytest_cache/
+.DS_Store
+EOF
+
+git init -b main
+git remote add origin git@github.com:K26J/<repo-name>.git
+git remote -v && git status
