@@ -1,1 +1,20 @@
+# Keep temporary GitHub Actions credential files out of the image
 gha-creds-*.json
+
+# Exclude local virtual environment and Python cache files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude Git history, CI workflows, and local environment secrets
+.git/
+.gitignore
+.github/
+.env
+*.env
+
+# Exclude root docs, notebooks, and Windows metadata files
+/README.md
+*.ipynb
+*:Zone.Identifier
